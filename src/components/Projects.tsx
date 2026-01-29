@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { ExternalLink, Github, X } from 'lucide-react';
 import condorguide from '../assets/condorGuide.jpg';
 import comhub from '../assets/crm.webp';
+import electrofrost from '../assets/electrofrost.png';
+
 
 type Project = {
   id: number;
@@ -20,48 +22,90 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [visibleCount, setVisibleCount] = useState(3); // Default to 3 for mobile
 
-  const projects: Project[] = [
-{
-  id: 1,
-  title: 'Com-Hub System – Enterprise Dashboard & CRM',
-  description: 'Enterprise-level CRM and dashboard solution with predictive dialling, automated communication, and real-time tracking.',
-  image: comhub, 
-  technologies: ['React', 'Express', 'WebSockets', 'MySQL', 'AWS'],
-  github: 'https://github.com/gihan936',
-  live: 'http://crm360.victoriapartners.lk:55190/login',
-  longDescription: 'Com-Hub System is a powerful enterprise-grade dashboard and CRM solution designed for large-scale businesses. It integrates predictive dialling, automated email sending, real-time agent tracking, and advanced reporting. The system ensures seamless client, partner, and vendor management while handling 500+ concurrent users without performance lags.',
-  features: [
-    'Custom Dashboards for Enterprise Users',
-    'Predictive Dialling for Agent Efficiency',
-    'Automated Email Sending System',
-    'Real-Time Reports & Agent Tracking',
-    'Client, Partner, and Vendor Management',
-    'Handles 500+ Concurrent Users Smoothly'
-  ]
-}
-,
-{
-  id: 2,
-  title: 'CondorGuide – Campus Navigation & Facility Management',
-  description: 'A full-stack campus navigation and facility management web app with smart tracking, alerts, and issue reporting.',
-  image: condorguide,
-  technologies: ['React.js', 'Node.js', 'Express', 'MongoDB', 'Mapbox GL JS', 'JWT', 'SMTPGrid', 'GridFS', 'Stripe', 'Bootstrap'],
-  github: 'https://github.com/gihan936/CondorGuide.git',
-  live: 'https://condor-guide-czmq.vercel.app/', 
-  longDescription: 'CondorGuide is a modern full-stack web application built to simplify campus life. It provides classroom tracking, smart navigation using Mapbox GL JS, issue reporting for facilities, and emergency alert systems. The app is designed for students, faculty, and staff, ensuring smooth communication and accessibility. With JWT authentication, GridFS for file handling, and Stripe integration for campus service payments, CondorGuide enhances campus efficiency with a secure and user-friendly experience.',
-  features: [
-    'Smart Campus Navigation with Mapbox GL JS',
-    'Classroom Tracking & Scheduling',
-    'Facility Issue Reporting System',
-    'Emergency Alert Notifications',
-    'JWT Authentication & Secure Access',
-    'File Storage with GridFS',
-    'Stripe Integration for Campus Payments',
-    'Intuitive UI/UX Designed in Figma'
-  ]
-}
+const projects: Project[] = [
+  {
+    id: 0,
+    title: 'ElectroFrost Website – Commercial Refrigeration & Electrical Services',
+    description:
+      'Production-ready corporate website developed for ElectroFrost Inc to support service bookings, SEO growth, and operational workflows.',
+    image: electrofrost,
+    technologies: [
+      'Wix Studio',
+      'Velo by Wix',
+      'JavaScript',
+      'CMS Collections',
+      'SEO',
+      'ServiceM8 Integration',
+      'Responsive Design',
+      'Performance Optimisation'
+    ],
+    live: 'https://www.electrofrost.ca/',
+    longDescription:
+      'The ElectroFrost website is a real-world business platform designed and developed to support commercial refrigeration and electrical service operations across Ontario. Built using Wix Studio and Velo, the site features dynamic CMS-driven service pages, SEO-optimised content, and direct integration with ServiceM8 for online booking and lead management. The platform focuses on performance, scalability, and conversion-focused UX for field-service customers.',
+    features: [
+      'Custom-designed service pages for refrigeration, HVAC, and electrical services',
+      'SEO-optimised structure with city-based and service-based landing pages',
+      'Online booking and lead capture integrated with ServiceM8',
+      'Dynamic CMS collections for services, projects, and service areas',
+      'Mobile-first responsive design for field-service customers',
+      'Performance and UX optimisation for faster load times and conversions'
+    ]
+  },
+  {
+    id: 1,
+    title: 'Com-Hub System – Enterprise Dashboard & CRM',
+    description:
+      'Enterprise-level CRM and dashboard solution with predictive dialling, automated communication, and real-time tracking.',
+    image: comhub,
+    technologies: ['React', 'Express', 'WebSockets', 'MySQL', 'AWS'],
+    github: 'https://github.com/gihan936',
+    live: 'http://crm360.victoriapartners.lk:55190/login',
+    longDescription:
+      'Com-Hub System is a powerful enterprise-grade dashboard and CRM solution designed for large-scale businesses. It integrates predictive dialling, automated email sending, real-time agent tracking, and advanced reporting. The system ensures seamless client, partner, and vendor management while handling 500+ concurrent users without performance lags.',
+    features: [
+      'Custom Dashboards for Enterprise Users',
+      'Predictive Dialling for Agent Efficiency',
+      'Automated Email Sending System',
+      'Real-Time Reports & Agent Tracking',
+      'Client, Partner, and Vendor Management',
+      'Handles 500+ Concurrent Users Smoothly'
+    ]
+  },
+  {
+    id: 2,
+    title: 'CondorGuide – Campus Navigation & Facility Management',
+    description:
+      'A full-stack campus navigation and facility management web app with smart tracking, alerts, and issue reporting.',
+    image: condorguide,
+    technologies: [
+      'React.js',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'Mapbox GL JS',
+      'JWT',
+      'SMTPGrid',
+      'GridFS',
+      'Stripe',
+      'Bootstrap'
+    ],
+    github: 'https://github.com/gihan936/CondorGuide.git',
+    live: 'https://condor-guide-czmq.vercel.app/',
+    longDescription:
+      'CondorGuide is a modern full-stack web application built to simplify campus life. It provides classroom tracking, smart navigation using Mapbox GL JS, issue reporting for facilities, and emergency alert systems. Designed for students, faculty, and staff, the platform ensures smooth communication and accessibility with secure authentication and integrated payment handling.',
+    features: [
+      'Smart Campus Navigation with Mapbox GL JS',
+      'Classroom Tracking & Scheduling',
+      'Facility Issue Reporting System',
+      'Emergency Alert Notifications',
+      'JWT Authentication & Secure Access',
+      'File Storage with GridFS',
+      'Stripe Integration for Campus Payments',
+      'Intuitive UI/UX Designed in Figma'
+    ]
+  }
+];
 
-  ];
 
   // Set initial visible count based on screen size
   useEffect(() => {

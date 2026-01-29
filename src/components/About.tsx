@@ -1,6 +1,6 @@
 import { Download, MapPin, GraduationCap, Briefcase, ArrowRight, Sparkles, Github, Linkedin } from 'lucide-react';
 import profilePic from '../assets/myImg.jpg';
-import resume from '../assets/Gihan-Edirisinghe-CV-2025.pdf';
+import resume from '../assets/Gihan-Edirisinghe-Resume.pdf';
 
 const About = () => {
   return (
@@ -35,7 +35,7 @@ const About = () => {
               </h1>
 
               <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-200">
-                Full-Stack Software Engineer
+                Application Support Analyst | Full-Stack Software Engineer
               </h2>
             </div>
 
@@ -66,7 +66,7 @@ const About = () => {
                   </div>
                   <div>
                     <p className="text-xs sm:text-sm text-gray-500 font-medium uppercase">Role</p>
-                    <p className="text-white text-xs sm:text-base font-semibold">Software Engineer</p>
+                    <p className="text-white text-xs sm:text-base font-semibold">Application Support Analyst</p>
                   </div>
                 </div>
               </div>
@@ -75,7 +75,7 @@ const About = () => {
             <div className="flex flex-col sm:flex-row gap-3 pt-4">
               <a
                 href={resume}
-                download="Gihan-Edirisinghe-CV-2025.pdf"
+                download="Gihan-Edirisinghe-Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative bg-cyan-700/30 hover:bg-slate-50 hover:text-black text-white px-6 py-3 rounded-lg font-medium text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/10 flex items-center justify-center space-x-2"
