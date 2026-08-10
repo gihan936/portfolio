@@ -30,7 +30,7 @@ const Experience = () => {
       technologies: [   'React',  'Node.js',  'Express.js',  'JavaScript',  'REST APIs',  'SQL & NoSQL Databases',  'ERP Systems',
   'CRM Systems',  'AWS',  'CI/CD',  'System Integration',  'Automated Testing'],
       highlights: [
-        'Led development and support of CRM and ERP systems, translating business needs into technical solutions.',
+        'Provided Tier 1/Tier 2 production support for CRM, ERP, and business-critical applications, managing incidents and service requests through Jira while meeting SLA targets.',
         'Built system integrations, reports, and data models using REST APIs and SQL/NoSQL databases.',
         'Performed system testing, troubleshooting, deployments, and documentation for ERP environments.',
         'Deployed cloud applications using AWS, Git, and CI/CD pipelines, reducing deployment time by 20%.',

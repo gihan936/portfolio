@@ -75,7 +75,7 @@ const About = () => {
             <div className="flex flex-col sm:flex-row gap-3 pt-4">
               <a
                 href={resume}
-                download="Gihan-Edirisinghe-Resume.pdf"
+                download="Mr Gihan_Edirisinghe_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative bg-cyan-700/30 hover:bg-slate-50 hover:text-black text-white px-6 py-3 rounded-lg font-medium text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/10 flex items-center justify-center space-x-2"
