@@ -22,7 +22,7 @@ const Experience = () => {
     },
     {
       id: 2,
-      position: 'Software Engineer',
+      position: 'Application Support Engineer',
       company: 'Victoria Partners Pvt Ltd',
       location: 'Colombo, Sri Lanka',
       duration: 'Aug 2022 - Apr 2024',
@@ -31,10 +31,12 @@ const Experience = () => {
   'CRM Systems',  'AWS',  'CI/CD',  'System Integration',  'Automated Testing'],
       highlights: [
         'Provided Tier 1/Tier 2 production support for CRM, ERP, and business-critical applications, managing incidents and service requests through Jira while meeting SLA targets.',
-        'Built system integrations, reports, and data models using REST APIs and SQL/NoSQL databases.',
-        'Performed system testing, troubleshooting, deployments, and documentation for ERP environments.',
-        'Deployed cloud applications using AWS, Git, and CI/CD pipelines, reducing deployment time by 20%.',
-        'Contributed to system upgrades, optimisation, and security governance initiatives.'
+        'Troubleshot application issues using log analysis, monitoring tools, and root cause analysis (RCA), resolving incidents and escalating complex production issues when required.',
+        'Developed SQL queries, performed data validation, and investigated database issues to support CRM/ERP applications and business operations.',
+        'Supported Windows/Linux Server and AWS environments, including system monitoring, application deployments, service troubleshooting, and performance analysis.',
+        'Supported REST APIs and system integrations, troubleshooting API connectivity, authentication, data flow, and application integration issues.',
+        'Used PowerShell and Bash scripting to support troubleshooting, system administration, application maintenance, and automation of routine support tasks.',
+        'Supported application releases, testing, change management, Active Directory, M365, VPN, and endpoint troubleshooting while following ITIL incident, problem, and change management practices.'
       ]
     },
     {
