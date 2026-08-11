@@ -1,6 +1,8 @@
 import { Award, ExternalLink, Calendar, Building, GraduationCap } from 'lucide-react';
 import agile from '../assets/Agile.png';
 import test from '../assets/testing.png';
+import ITIL from '../assets/ITIL.jpg';
+import Microsoft  from '../assets/Microsoft.jpg';
 
 const EducationCertificates = () => {
   const education = [
@@ -24,7 +26,7 @@ const EducationCertificates = () => {
 
   const certificates = [
     {
-      id: 1,
+      id: 3,
       title: 'Agile Software Development: Kanban for Developers',
       issuer: 'LinkedIn',
       date: 'May 2025',
@@ -34,7 +36,7 @@ const EducationCertificates = () => {
       skills: ['Agile Principles', 'Kanban Methodology', 'Workflow Visualization', 'Task Management', 'Continuous Delivery', 'Team Collaboration', 'Process Optimization']
     },
     {
-      id: 2,
+      id: 4,
       title: 'Software Testing: Exploratory Testing',
       issuer: 'LinkedIn',
       date: 'May 2025',
@@ -42,6 +44,26 @@ const EducationCertificates = () => {
       verifyUrl: 'https://www.linkedin.com/learning/certificates/1427ff2cd8d141100bec1b6daa42dc582f4c350338f49f45a5bb9ecd6907f297',
       description: 'Completed a professional course on Software Testing with a focus on Exploratory Testing techniques. Gained hands-on experience in identifying defects, improving test coverage, and enhancing overall software quality.',
       skills: ['Exploratory Testing', 'Test Design Techniques', 'Defect Identification', 'Test Coverage', 'Software Quality Assurance']
+    },
+    {
+      id: 1,
+      title: 'ITIL® 5 Foundation Certificate in IT Service Management',
+      issuer: 'Peoplecert',
+      date: 'July 2026',
+      image: ITIL,
+      verifyUrl: 'https://badges.peoplecert.org/Badge/en/2/F6CBFD7B-F72A-467C-A1D2-C48A29028A4B?36',
+      description: 'Completed a professional course on ITIL® 5 Foundation in IT Service Management. Gained a comprehensive understanding of the ITIL framework and its application in managing and delivering high-quality IT services.',
+      skills: ['ITIL Framework', 'IT Service Management', 'Service Strategy', 'Service Design', 'Service Transition', 'Service Operation', 'Continual Improvement']
+    },
+    {
+      id: 2,
+      title: 'Microsoft Certified: Azure Fundamentals',
+      issuer: 'Microsoft',
+      date: 'July 2026',
+      image: Microsoft,
+      verifyUrl: 'https://learn.microsoft.com/en-us/users/gihanniranga-1740/credentials/8e2036115d017256?ref=https%3A%2F%2Fwww.linkedin.com%2F',
+      description: 'Completed a professional course on Microsoft Certified: Azure Fundamentals. Gained a comprehensive understanding of Azure services and their application in building and managing cloud-based solutions.',
+      skills: ['Azure Services', 'Cloud Computing', 'Infrastructure as Code', 'DevOps Practices', 'Security Best Practices', 'Cost Management', 'Monitoring and Optimization']
     }
   ];
 
