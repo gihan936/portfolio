@@ -26,26 +26,6 @@ const EducationCertificates = () => {
 
   const certificates = [
     {
-      id: 3,
-      title: 'Agile Software Development: Kanban for Developers',
-      issuer: 'LinkedIn',
-      date: 'May 2025',
-      image: agile,
-      verifyUrl: 'https://www.linkedin.com/learning/certificates/15a80e9953840c9720e4a16b96f2b8191369c858239a0d12180e268a616bfb95',
-      description: 'Completed a professional course on Agile Software Development with a focus on Kanban methodology. Gained hands-on experience in applying Kanban principles to improve workflow efficiency, manage tasks, and optimize team collaboration.',
-      skills: ['Agile Principles', 'Kanban Methodology', 'Workflow Visualization', 'Task Management', 'Continuous Delivery', 'Team Collaboration', 'Process Optimization']
-    },
-    {
-      id: 4,
-      title: 'Software Testing: Exploratory Testing',
-      issuer: 'LinkedIn',
-      date: 'May 2025',
-      image: test,
-      verifyUrl: 'https://www.linkedin.com/learning/certificates/1427ff2cd8d141100bec1b6daa42dc582f4c350338f49f45a5bb9ecd6907f297',
-      description: 'Completed a professional course on Software Testing with a focus on Exploratory Testing techniques. Gained hands-on experience in identifying defects, improving test coverage, and enhancing overall software quality.',
-      skills: ['Exploratory Testing', 'Test Design Techniques', 'Defect Identification', 'Test Coverage', 'Software Quality Assurance']
-    },
-    {
       id: 1,
       title: 'ITIL® 5 Foundation Certificate in IT Service Management',
       issuer: 'Peoplecert',
@@ -64,11 +44,31 @@ const EducationCertificates = () => {
       verifyUrl: 'https://learn.microsoft.com/en-us/users/gihanniranga-1740/credentials/8e2036115d017256?ref=https%3A%2F%2Fwww.linkedin.com%2F',
       description: 'Completed a professional course on Microsoft Certified: Azure Fundamentals. Gained a comprehensive understanding of Azure services and their application in building and managing cloud-based solutions.',
       skills: ['Azure Services', 'Cloud Computing', 'Infrastructure as Code', 'DevOps Practices', 'Security Best Practices', 'Cost Management', 'Monitoring and Optimization']
+    },
+      {
+      id: 3,
+      title: 'Agile Software Development: Kanban for Developers',
+      issuer: 'LinkedIn',
+      date: 'May 2025',
+      image: agile,
+      verifyUrl: 'https://www.linkedin.com/learning/certificates/15a80e9953840c9720e4a16b96f2b8191369c858239a0d12180e268a616bfb95',
+      description: 'Completed a professional course on Agile Software Development with a focus on Kanban methodology. Gained hands-on experience in applying Kanban principles to improve workflow efficiency, manage tasks, and optimize team collaboration.',
+      skills: ['Agile Principles', 'Kanban Methodology', 'Workflow Visualization', 'Task Management', 'Continuous Delivery', 'Team Collaboration', 'Process Optimization']
+    },
+    {
+      id: 4,
+      title: 'Software Testing: Exploratory Testing',
+      issuer: 'LinkedIn',
+      date: 'May 2025',
+      image: test,
+      verifyUrl: 'https://www.linkedin.com/learning/certificates/1427ff2cd8d141100bec1b6daa42dc582f4c350338f49f45a5bb9ecd6907f297',
+      description: 'Completed a professional course on Software Testing with a focus on Exploratory Testing techniques. Gained hands-on experience in identifying defects, improving test coverage, and enhancing overall software quality.',
+      skills: ['Exploratory Testing', 'Test Design Techniques', 'Defect Identification', 'Test Coverage', 'Software Quality Assurance']
     }
   ];
 
   return (
-    <section id="education-certificates" className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-black">
+    <section id="certificates" className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-black">
       {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 w-32 h-32 bg-gray-300/10 rounded-full blur-xl animate-pulse"></div>
